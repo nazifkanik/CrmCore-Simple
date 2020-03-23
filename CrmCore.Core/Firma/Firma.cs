@@ -47,32 +47,3 @@ namespace CrmCore.Core.Firma
         }
     }
 }
-
-/*
-    public class BazaarList
-    {
-        [MaxLength(160)]
-        [Display(Name ="Açıklama")]
-        public string Description { get; set; }
-        [Required]
-        [Display(Name ="Oluşturan Kullanıcı")]
-        public string CreatorUserId { get; set; }
-        [Display(Name ="Oluşturma Tarihi")]
-        public DateTime CreatedDate { get; set; }
-        public virtual ICollection<BazaarListItem> BazaarListItems { get; set; }
-        // Single Responsiblity ve DRY
-        public static BazaarList Create(string title, string description, string creatorUserId)
-        {
-            return new BazaarList
-            {
-                Title = title,
-                Description = description,
-                CreatorUserId = creatorUserId,
-                CreatedDate = DateTime.Now
-            };
-            // PascalCase : sinif isimleri, sinif properties, metod isimleri
-            // camelCase: degiskenler, parametreler
-            // kebap-case: html, css, js dosya isimleri. CSS'de id ve class isimleri
-        }
-    }
-     */
